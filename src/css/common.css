@@ -16,3 +16,92 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #3498db;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+/* Стили для отключенной кнопки */
+.button:disabled {
+  cursor: not-allowed;
+  border: 2px solid #bdc3c7;
+  background-color: #bdc3c7;
+  color: #ecf0f1;
+}
+.body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #eaeaea;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #e44d26;
+}
+
+.submit {
+  background-color: #e44d26;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submit:hover {
+  background-color: #ff6348;
+}
+
+.submit:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
