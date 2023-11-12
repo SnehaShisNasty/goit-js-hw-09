@@ -18,7 +18,7 @@ function startClick() {
   const firstColor = getRandomHexColor();
   console.log(firstColor);
   body.style.background = firstColor;
-  timerId = setInterval(() => {
+  const timerId = setInterval(() => {
     const restColor = getRandomHexColor();
     console.log(restColor);
     body.style.background = restColor;
