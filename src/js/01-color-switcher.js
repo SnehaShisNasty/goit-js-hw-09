@@ -4,6 +4,7 @@ const refs = {
 };
 
 const body = document.querySelector('body');
+let timerId;
 
 refs.startBth.addEventListener('click', startClick);
 function getRandomHexColor() {
@@ -18,7 +19,7 @@ function startClick() {
   const firstColor = getRandomHexColor();
   console.log(firstColor);
   body.style.background = firstColor;
-  const timerId = setInterval(() => {
+  timerId = setInterval(() => {
     const restColor = getRandomHexColor();
     console.log(restColor);
     body.style.background = restColor;
