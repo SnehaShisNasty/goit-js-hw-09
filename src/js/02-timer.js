@@ -9,6 +9,7 @@ const dataHours = document.querySelector('span[data-hours]');
 const dataMinutes = document.querySelector('span[data-minutes]');
 const dataSeconds = document.querySelector('span[data-seconds]');
 
+let timerId;
 const options = {
   enableTime: true,
   time_24hr: true,
