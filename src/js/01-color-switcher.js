@@ -5,7 +5,7 @@ const refs = {
 
 const body = document.querySelector('body');
 let timerId;
-
+refs.stopBth.disabled = true;
 refs.startBth.addEventListener('click', startClick);
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)

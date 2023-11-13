@@ -4,7 +4,7 @@ const refs = {
   delay: document.querySelector('input[name="delay"]'),
   step: document.querySelector('input[name="step"]'),
   amount: document.querySelector('input[name="amount"]'),
-  submit: document.querySelector('button[type="submit"'),
+  submit: document.querySelector('.submit'),
 };
 
 function createPromise(position, delay) {
@@ -31,13 +31,12 @@ function generatePromises() {
   for (let i = 1; i <= amount; i += 1) {
     createPromise(i, delay + (i - 1) * step);
   }
-  refs.submit.disabled = false;
 }
 
 refs.form.addEventListener('submit', submit);
 
 function submit(event) {
   event.preventDefault();
-  refs.submit.disabled = true;
   generatePromises();
+  refs.form.reset();
 }
